@@ -25,9 +25,16 @@
             <View style="@style/horizontal_line"/>
 
             <TextView
-                android:id="@+id/tv_text1"
+                android:id="@+id/tv_permission"
                 style="@style/item_text"
-                android:text="Hello World!"/>
+                android:text="android6.0运行时权限"/>
+
+            <View style="@style/horizontal_line"/>
+
+            <TextView
+                android:id="@+id/tv_dagger"
+                style="@style/item_text"
+                android:text="Dagger2使用demo"/>
 
             <View style="@style/horizontal_line"/>
 
