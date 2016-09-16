@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.dhao.mytestdemo.dagger2.DaggerActivity;
+import com.dhao.mytestdemo.eventbus.EventbusActivity;
 import com.dhao.mytestdemo.permission.PermissionActivity;
 import com.dhao.mytestdemo.wallet.WalletAnimationActivity;
 
@@ -20,6 +21,8 @@ public class MainActivity extends BaseActivity {
     TextView tvPermission;
     @BindView(R.id.tv_dagger)
     TextView tvDagger;
+    @BindView(R.id.tv_event_bus)
+    TextView mTvEventBus;
 
     @Override
     protected int getLayoutResId() {
@@ -45,7 +48,14 @@ public class MainActivity extends BaseActivity {
         tvDagger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,DaggerActivity.class));
+                startActivity(new Intent(MainActivity.this, DaggerActivity.class));
+            }
+        });
+
+        mTvEventBus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, EventbusActivity.class));
             }
         });
     }
