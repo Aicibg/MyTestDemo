@@ -1,6 +1,0 @@
-/*
-
- */
-ext{
-    supportLibraryVersion = '24.2.0'
-}
