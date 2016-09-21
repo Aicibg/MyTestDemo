@@ -45,6 +45,13 @@
 
             <View style="@style/horizontal_line"/>
 
+            <TextView
+                android:id="@+id/tv_behavior"
+                style="@style/item_text"
+                android:text="自定义behavior嵌套滑动"/>
+
+            <View style="@style/horizontal_line"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
