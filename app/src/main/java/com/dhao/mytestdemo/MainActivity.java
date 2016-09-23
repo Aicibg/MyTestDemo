@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.dhao.mytestdemo.dagger2.DaggerActivity;
 import com.dhao.mytestdemo.eventbus.EventbusActivity;
 import com.dhao.mytestdemo.permission.PermissionActivity;
+import com.dhao.mytestdemo.scroller.ScrollerTextActivity;
 import com.dhao.mytestdemo.wallet.WalletAnimationActivity;
 
 import butterknife.BindView;
@@ -23,6 +24,8 @@ public class MainActivity extends BaseActivity {
     TextView tvDagger;
     @BindView(R.id.tv_event_bus)
     TextView mTvEventBus;
+    @BindView(R.id.tv_scroll_text)
+    TextView mTvScrollText;
 
     @Override
     protected int getLayoutResId() {
@@ -56,6 +59,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, EventbusActivity.class));
+            }
+        });
+
+        mTvScrollText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ScrollerTextActivity.class));
             }
         });
     }
