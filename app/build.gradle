@@ -37,4 +37,6 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'com.donghao:eventbuslibrary:1.0.0'
     compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+
 }

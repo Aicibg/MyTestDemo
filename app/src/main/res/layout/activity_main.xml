@@ -52,6 +52,20 @@
 
             <View style="@style/horizontal_line"/>
 
+            <TextView
+                android:id="@+id/tv_icon_font"
+                style="@style/item_text"
+                android:text="textview使用iconfont显示图片"/>
+
+            <View style="@style/horizontal_line"/>
+
+            <TextView
+                android:id="@+id/tv_constraint_layout"
+                style="@style/item_text"
+                android:text="ConstraintLayout"/>
+
+            <View style="@style/horizontal_line"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
