@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.dhao.mytestdemo.behavior.BehaviorActivity;
+import com.dhao.mytestdemo.constraintlayout.ConstraintActivity;
 import com.dhao.mytestdemo.dagger2.DaggerActivity;
-import com.dhao.mytestdemo.eventbus.EventbusActivity;
+import com.dhao.mytestdemo.iconfont.IconFontActivity;
 import com.dhao.mytestdemo.permission.PermissionActivity;
-import com.dhao.mytestdemo.scroller.ScrollerTextActivity;
 import com.dhao.mytestdemo.wallet.WalletAnimationActivity;
 
 import butterknife.BindView;
@@ -24,8 +25,12 @@ public class MainActivity extends BaseActivity {
     TextView tvDagger;
     @BindView(R.id.tv_event_bus)
     TextView mTvEventBus;
-    @BindView(R.id.tv_scroll_text)
-    TextView mTvScrollText;
+    @BindView(R.id.tv_behavior)
+    TextView tvBehavior;
+    @BindView(R.id.tv_icon_font)
+    TextView tvIconFont;
+    @BindView(R.id.tv_constraint_layout)
+    TextView tvConstraintLayout;
 
     @Override
     protected int getLayoutResId() {
@@ -55,19 +60,35 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-        mTvEventBus.setOnClickListener(new View.OnClickListener() {
+//        mTvEventBus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(MainActivity.this, EventbusActivity.class));
+//            }
+//        });
+
+        tvBehavior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EventbusActivity.class));
+                startActivity(new Intent(MainActivity.this, BehaviorActivity.class));
             }
         });
 
-        mTvScrollText.setOnClickListener(new View.OnClickListener() {
+        tvIconFont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,ScrollerTextActivity.class));
+                startActivity(new Intent(MainActivity.this, IconFontActivity.class));
+            }
+        });
+
+        tvConstraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ConstraintActivity.class));
             }
         });
     }
+
+
 
 }

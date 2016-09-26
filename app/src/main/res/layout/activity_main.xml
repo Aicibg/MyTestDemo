@@ -46,9 +46,23 @@
             <View style="@style/horizontal_line"/>
 
             <TextView
-                android:id="@+id/tv_scroll_text"
+                android:id="@+id/tv_behavior"
                 style="@style/item_text"
-                android:text="Scoller实现字条滚动"/>
+                android:text="自定义behavior嵌套滑动"/>
+
+            <View style="@style/horizontal_line"/>
+
+            <TextView
+                android:id="@+id/tv_icon_font"
+                style="@style/item_text"
+                android:text="textview使用iconfont显示图片"/>
+
+            <View style="@style/horizontal_line"/>
+
+            <TextView
+                android:id="@+id/tv_constraint_layout"
+                style="@style/item_text"
+                android:text="ConstraintLayout"/>
 
             <View style="@style/horizontal_line"/>
 

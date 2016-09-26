@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.dhao.mytestdemo.behavior.BehaviorActivity">
+
+    <TextView
+        android:background="@android:color/holo_green_light"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/tv_text"
+        app:layout_behavior="com.dhao.mytestdemo.behavior.ButtonBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:text="Click Me"
+        android:id="@+id/bt_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_list"
+         app:layout_behavior="com.dhao.mytestdemo.behavior.RecyclerBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.design.widget.CoordinatorLayout>
