@@ -2,7 +2,7 @@ package com.dhao.mytestdemo.dagger2;
 
 import android.widget.TextView;
 
-import com.dhao.mytestdemo.BaseActivity;
+import com.dhao.mytestdemo.base.BaseActivity;
 import com.dhao.mytestdemo.R;
 
 import javax.inject.Inject;

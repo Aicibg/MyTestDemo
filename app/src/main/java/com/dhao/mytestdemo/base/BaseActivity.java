@@ -1,11 +1,13 @@
-package com.dhao.mytestdemo;
+package com.dhao.mytestdemo.base;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.dhao.eventbuslibrary.EventBus;
+import com.dhao.mytestdemo.mvp.VaryViewHelpController;
 
 import butterknife.ButterKnife;
 
@@ -14,6 +16,7 @@ import butterknife.ButterKnife;
  * Description:
  */
 public abstract class BaseActivity extends AppCompatActivity {
+    protected VaryViewHelpController viewHelpController;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,6 +26,10 @@ public abstract class BaseActivity extends AppCompatActivity {
             EventBus.getDefault().register(this);
         }
         ButterKnife.bind(this);
+
+        if (getLoadingTargetView()!=null){
+            viewHelpController=new VaryViewHelpController(getLoadingTargetView());
+        }
         initViews();
     }
 
@@ -41,5 +48,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected abstract void initViews();
 
     protected abstract int getLayoutResId();
+
+    protected View getLoadingTargetView(){
+        return null;
+    }
 
 }

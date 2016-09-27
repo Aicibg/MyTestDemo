@@ -66,6 +66,13 @@
 
             <View style="@style/horizontal_line"/>
 
+            <TextView
+                android:id="@+id/tv_mvp_loading"
+                style="@style/item_text"
+                android:text="MVP下的loadingVew和EmptyView"/>
+
+            <View style="@style/horizontal_line"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

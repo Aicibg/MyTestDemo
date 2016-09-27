@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.dhao.mytestdemo.BaseActivity;
+import com.dhao.mytestdemo.base.BaseActivity;
 import com.dhao.mytestdemo.R;
 
 import java.util.ArrayList;

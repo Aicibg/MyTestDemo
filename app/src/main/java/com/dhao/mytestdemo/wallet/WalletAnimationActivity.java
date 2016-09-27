@@ -11,7 +11,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.dhao.mytestdemo.BaseActivity;
+import com.dhao.mytestdemo.base.BaseActivity;
 import com.dhao.mytestdemo.R;
 
 import butterknife.BindView;

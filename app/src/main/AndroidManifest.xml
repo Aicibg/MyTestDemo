@@ -25,7 +25,9 @@
         <activity android:name=".eventbus.EventbusActivity" />
         <activity android:name=".behavior.BehaviorActivity" />
         <activity android:name=".iconfont.IconFontActivity" />
-        <activity android:name=".constraintlayout.ConstraintActivity"></activity>
+        <activity android:name=".constraintlayout.ConstraintActivity" />
+        <activity android:name=".mvp.LoadingMvpActivity" />
+        <activity android:name=".mvp.LoginActivity"></activity>
     </application>
 
 </manifest>

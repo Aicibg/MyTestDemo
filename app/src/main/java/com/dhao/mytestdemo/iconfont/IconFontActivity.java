@@ -3,7 +3,7 @@ package com.dhao.mytestdemo.iconfont;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.dhao.mytestdemo.BaseActivity;
+import com.dhao.mytestdemo.base.BaseActivity;
 import com.dhao.mytestdemo.R;
 
 import butterknife.BindView;

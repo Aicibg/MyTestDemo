@@ -5,10 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.dhao.mytestdemo.base.BaseActivity;
 import com.dhao.mytestdemo.behavior.BehaviorActivity;
 import com.dhao.mytestdemo.constraintlayout.ConstraintActivity;
 import com.dhao.mytestdemo.dagger2.DaggerActivity;
 import com.dhao.mytestdemo.iconfont.IconFontActivity;
+import com.dhao.mytestdemo.mvp.LoadingMvpActivity;
+import com.dhao.mytestdemo.mvp.LoginActivity;
 import com.dhao.mytestdemo.permission.PermissionActivity;
 import com.dhao.mytestdemo.wallet.WalletAnimationActivity;
 
@@ -31,6 +34,8 @@ public class MainActivity extends BaseActivity {
     TextView tvIconFont;
     @BindView(R.id.tv_constraint_layout)
     TextView tvConstraintLayout;
+    @BindView(R.id.tv_mvp_loading)
+    TextView tvMvpLoading;
 
     @Override
     protected int getLayoutResId() {
@@ -85,6 +90,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ConstraintActivity.class));
+            }
+        });
+
+        tvMvpLoading.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
     }
