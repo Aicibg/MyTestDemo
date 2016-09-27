@@ -4,7 +4,7 @@ import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.view.View;
 
-import com.dhao.mytestdemo.BaseActivity;
+import com.dhao.mytestdemo.base.BaseActivity;
 import com.dhao.mytestdemo.R;
 
 import butterknife.BindView;

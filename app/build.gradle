@@ -38,5 +38,5 @@ dependencies {
     compile 'com.donghao:eventbuslibrary:1.0.0'
     compile 'com.android.support:design:24.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
-
+    compile files('libs/aptlibrary.jar')
 }

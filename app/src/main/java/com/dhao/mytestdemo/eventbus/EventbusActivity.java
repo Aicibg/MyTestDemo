@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.dhao.eventbuslibrary.EventBus;
 import com.dhao.eventbuslibrary.Subscribe;
 import com.dhao.eventbuslibrary.meta.EventCenter;
-import com.dhao.mytestdemo.BaseActivity;
+import com.dhao.mytestdemo.base.BaseActivity;
 import com.dhao.mytestdemo.R;
 
 import butterknife.BindView;
