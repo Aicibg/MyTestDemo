@@ -1,16 +1,18 @@
-package com.dhao.mytestdemo.mvp;
+package com.dhao.mytestdemo.mvp.varyview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.dhao.mytestdemo.mvp.varyview.IVaryViewHelp;
+
 /**
  * Created by DongHao on 2016/9/26.
  * Description:
  */
 
-public class VaryViewHelp implements IVaryViewHelp{
+public class VaryViewHelp implements IVaryViewHelp {
     private View view;
     private int viewIndex;
     private ViewGroup parentView;

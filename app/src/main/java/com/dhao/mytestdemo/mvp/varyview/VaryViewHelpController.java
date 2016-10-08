@@ -1,4 +1,4 @@
-package com.dhao.mytestdemo.mvp;
+package com.dhao.mytestdemo.mvp.varyview;
 
 import android.text.TextUtils;
 import android.view.View;
@@ -6,6 +6,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dhao.mytestdemo.R;
+import com.dhao.mytestdemo.mvp.varyview.IVaryViewHelp;
+import com.dhao.mytestdemo.mvp.varyview.VaryViewHelp;
 
 /**
  * Created by DongHao on 2016/9/26.

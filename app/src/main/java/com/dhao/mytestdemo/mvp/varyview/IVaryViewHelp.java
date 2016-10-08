@@ -1,4 +1,4 @@
-package com.dhao.mytestdemo.mvp;
+package com.dhao.mytestdemo.mvp.varyview;
 
 import android.content.Context;
 import android.view.View;
