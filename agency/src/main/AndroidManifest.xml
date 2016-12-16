@@ -9,11 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
         </activity>
         <activity android:name=".layoutmanager.LayoutManagerActivity">
         </activity>
         <activity android:name=".viewdrag.ViewDragActivity">
+
+        </activity>
+        <activity android:name=".scroll.ScrollActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
