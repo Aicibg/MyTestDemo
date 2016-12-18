@@ -7,14 +7,13 @@
     android:layout_height="match_parent"
     tools:context="com.tengda.agency.viewdrag.ViewDragActivity">
 
-    <com.tengda.agency.viewdrag.ViewDragMenuLayout
-        android:orientation="horizontal"
+    <com.tengda.agency.viewdrag.ViewDragLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="80dp">
 
             <TextView
@@ -35,23 +34,14 @@
             <ImageView
                 android:src="@mipmap/ic_launcher"
                 android:layout_width="70dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="80dp"/>
 
             <ImageView
                 android:src="@mipmap/ic_launcher"
                 android:layout_width="70dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="80dp"/>
 
         </LinearLayout>
-    </com.tengda.agency.viewdrag.ViewDragMenuLayout>
-
-    <TextView
-        android:layout_alignParentBottom="true"
-        android:text="《罗曼蒂克消亡史》北京举办首映礼，章子怡在戏里饰演小六"
-        android:textSize="18sp"
-        android:padding="5dp"
-        android:id="@+id/tv_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    </com.tengda.agency.viewdrag.ViewDragLayout>
 
 </RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/fab1"
+      android:background="@color/colorAccent"
+      android:src="@mipmap/ic_launcher"
+      android:layout_width="40dp"
+      android:layout_height="40dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:background="@color/colorAccent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:background="@color/colorAccent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:background="@color/colorAccent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab5"
+        android:background="@color/colorAccent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+</FrameLayout>
