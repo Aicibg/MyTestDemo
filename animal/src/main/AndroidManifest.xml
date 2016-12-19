@@ -13,9 +13,11 @@
         <activity android:name=".Main2Activity">
         </activity>
         <activity android:name=".Main3Activity">
-
         </activity>
         <activity android:name=".ValueActivity">
+
+        </activity>
+        <activity android:name=".spannable.SpanActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
