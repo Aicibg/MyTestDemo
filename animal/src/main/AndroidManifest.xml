@@ -15,9 +15,15 @@
         <activity android:name=".Main3Activity">
         </activity>
         <activity android:name=".ValueActivity">
-
         </activity>
         <activity android:name=".spannable.SpanActivity">
+        </activity>
+        <activity android:name=".activityoption.OptionActivity">
+
+        </activity>
+        <activity android:name=".activityoption.Option2Activity">
+        </activity>
+        <activity android:name=".materialdesign.DesignActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
